@@ -1,4 +1,4 @@
-package proyecto_corte2;
-public class Mago {
+package Juego;
+public class Mago extends Personaje{
     
 }

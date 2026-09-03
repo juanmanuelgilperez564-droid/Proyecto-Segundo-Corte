@@ -1,4 +1,4 @@
-package proyecto_corte2;
+package Juego;
 public class Heroe {
     
 }
