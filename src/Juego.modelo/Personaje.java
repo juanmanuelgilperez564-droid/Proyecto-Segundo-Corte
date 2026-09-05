@@ -7,12 +7,16 @@ public class Personaje {
     protected boolean esBueno;
     
     //Constructores
+    
+    //Constructor 1. Por defecto
     public Personaje(){
         this("Pedro", 1, 100, true);
     }
+    //Constructor 2. Solo nombre
     public Personaje(String nombre){
         this(nombre, 1, 100, true);
     } 
+    //Constructor 3. General
     public Personaje(String nombre, int nivel, double salud, boolean esBueno){
         this.nombre=nombre;
         this.nivel=nivel;

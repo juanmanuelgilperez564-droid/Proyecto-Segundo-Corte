@@ -6,12 +6,13 @@ public class Mago extends Personaje{
     private boolean tieneBarita;
     private String elemento;
     //Metodos constructores
+    //Constructor 1. por defecto
     public Mago(){
         this("Pepe", 1, 100, true, 10, 50, false, "tierra");
     }
-    
-    public Mago(String nombre, int nivel, double salud, boolean esBueno, int puntosMana){
-        super(nombre, nivel, salud, esBueno);
+    //Constructor 2. Nombre y puntos de mana
+    public Mago(String nombre, int puntosMana){
+        super(nombre);
         this.puntosMana = puntosMana;
         
         if(puntosMana >= 100){
@@ -35,7 +36,7 @@ public class Mago extends Personaje{
             this.elemento = "Tierra";
         }
     }
-    
+    //Constructor 3. General
     public Mago(String nombre, int nivel, double salud, boolean esBueno, int puntosMana, double potenciaHechizo, boolean tieneBarita, String elemento){
         super(nombre, nivel, salud, esBueno);
         this.puntosMana = puntosMana;

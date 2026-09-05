@@ -5,14 +5,14 @@ public class Arquero extends Personaje {
     private double presicion;
     private boolean flechasEspeciales;
     private long cantidadFlechas;
-    
     //Metodos constructores
+    //Constructor 1. por defecto 
     public Arquero(){
         this("Arquerín", 1, 100, true, 500, 50, false, 1000L);
     }
-    
-    public Arquero(String nombre, int nivel, double salud, boolean esBueno, boolean flechasEspeciales){
-        super(nombre, nivel, salud, esBueno);
+    //Constructor 2. nombre y si tiene o no flechas especiales
+    public Arquero(String nombre, boolean flechasEspeciales){
+        super(nombre);
         this.flechasEspeciales = flechasEspeciales;
         
         if(flechasEspeciales == true){
@@ -26,7 +26,7 @@ public class Arquero extends Personaje {
             this.presicion = 50;
         }
     }
-    
+    //Constructor 3. General
     public Arquero(String nombre, int nivel, double salud, boolean esBueno, int distanciaAtaque, double presicion, boolean flechasEspeciales, long cantidadFlechas){
         super(nombre, nivel, salud, esBueno);
         this.distanciaAtaque = distanciaAtaque;
