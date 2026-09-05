@@ -29,7 +29,7 @@ public class Personaje {
     public void setNombre(String nombre){this.nombre = nombre;}
     
     public int getNivel(){return nivel;}
-    public void setNombre(int nivel){
+    public void setNivel(int nivel){
         if(nivel > 0){this.nivel = nivel;}
         else{System.out.println("Nivel no puede ser menor a cero");}
     }
