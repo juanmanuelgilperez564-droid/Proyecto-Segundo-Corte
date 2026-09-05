@@ -1,4 +1,46 @@
 package Juego;
 public class Mago extends Personaje{
+    //Atributos
+    private int puntosMana;
+    private double potenciaHechizo;
+    private boolean tieneBarita;
+    private String elemento;
+    //Metodos constructores
+    public Mago(){
+        this("Pepe", 1, 100, true, 10, 50, false, "tierra");
+    }
     
+    public Mago(String nombre, int nivel, double salud, boolean esBueno, int puntosMana){
+        super(nombre, nivel, salud, esBueno);
+        this.puntosMana = puntosMana;
+        
+        if(puntosMana >= 100){
+            this.potenciaHechizo = 1000;
+            this.tieneBarita = true;
+            this.elemento = "Fuego";
+        }
+        else if(puntosMana >= 75 && puntosMana<100){
+            this.potenciaHechizo = 500;
+            this.tieneBarita = true;
+            this.elemento = "Hielo";
+        }
+        else if(puntosMana >= 50 && puntosMana<75){
+            this.potenciaHechizo = 100;
+            this.tieneBarita = true;
+            this.elemento = "Aire";
+        }
+        else{
+            this.potenciaHechizo = 50;
+            this.tieneBarita = false;
+            this.elemento = "Tierra";
+        }
+    }
+    
+    public Mago(String nombre, int nivel, double salud, boolean esBueno, int puntosMana, double potenciaHechizo, boolean tieneBarita, String elemento){
+        super(nombre, nivel, salud, esBueno);
+        this.puntosMana = puntosMana;
+        this.potenciaHechizo = potenciaHechizo;
+        this.tieneBarita = tieneBarita;
+        this.elemento = elemento;
+    }
 }

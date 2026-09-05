@@ -1,4 +1,37 @@
 package Juego;
-public class Guerrero {
+public class Guerrero extends Personaje {
+    //Atributos
+    private char combate;
+    //A para agresivo, D para defensivo
+    private int fuerzaAtaque;
+    private double peso;
+    private boolean tieneEscudo;
+    //Metodos constructores
+    public Guerrero(){
+        this("Oswaldo", 1, 100, true, 'A', 100, 90, false);
+    }
     
+    public Guerrero(String nombre,int nivel, double salud, boolean esBueno, char combate){
+        super(nombre, nivel, salud, esBueno);
+        this.combate=combate;
+        
+        if(combate == 'A'){
+            this.fuerzaAtaque=100;
+            this.peso=90;
+            this.tieneEscudo=false;
+        }
+        else{
+            this.fuerzaAtaque=50;
+            this.peso=70;
+            this.tieneEscudo=true;
+        }
+    }
+    
+    public Guerrero(String nombre, int nivel, double salud, boolean esBueno, char combate, int fuerzaAtaque, double peso, boolean tieneEscudo){
+        super(nombre, nivel, salud, esBueno);
+        this.combate = combate;
+        this.fuerzaAtaque = fuerzaAtaque;
+        this.peso = peso;
+        this.tieneEscudo = tieneEscudo;
+    }
 }
