@@ -9,7 +9,7 @@ public class Guerrero extends Personaje {
     //Metodos constructores
     //Constructor 1. Por defecto
     public Guerrero(){
-        this("Oswaldo", 1, 100, true, 'A', 100, 90, false);
+        this("Oswaldo", 1, 100, false, 'A', 100, 90, false);
     }
     //Constructor 2. nombre y tipo de combate
     public Guerrero(String nombre, char combate){

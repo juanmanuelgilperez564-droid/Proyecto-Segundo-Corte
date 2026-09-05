@@ -8,7 +8,7 @@ public class Arquero extends Personaje {
     //Metodos constructores
     //Constructor 1. por defecto 
     public Arquero(){
-        this("Arquerín", 1, 100, true, 500, 50, false, 1000L);
+        this("Arquerín", 1, 100, false, 500, 50, false, 1000L);
     }
     //Constructor 2. nombre y si tiene o no flechas especiales
     public Arquero(String nombre, boolean flechasEspeciales){

@@ -10,7 +10,7 @@ public class Personaje {
     
     //Constructor 1. Por defecto
     public Personaje(){
-        this("Pedro", 1, 100, true);
+        this("Pedro", 1, 100, false);
     }
     //Constructor 2. Solo nombre
     public Personaje(String nombre){
@@ -47,6 +47,6 @@ public class Personaje {
                 "Nombre: " + nombre +
                 " Nivel: " + nivel +
                 " Salud: " + salud +
-                " Bando: " + esBueno + "}";
+                " ¿Es bueno?: " + esBueno + "}";
     }
 }

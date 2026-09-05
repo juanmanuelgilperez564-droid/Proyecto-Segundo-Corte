@@ -8,7 +8,7 @@ public class Mago extends Personaje{
     //Metodos constructores
     //Constructor 1. por defecto
     public Mago(){
-        this("Pepe", 1, 100, true, 10, 50, false, "tierra");
+        this("Pepe", 1, 100, false, 10, 50, false, "tierra");
     }
     //Constructor 2. Nombre y puntos de mana
     public Mago(String nombre, int puntosMana){
