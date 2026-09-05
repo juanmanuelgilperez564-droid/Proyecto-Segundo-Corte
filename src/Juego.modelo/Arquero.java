@@ -34,4 +34,15 @@ public class Arquero extends Personaje {
         this.flechasEspeciales = flechasEspeciales;
         this.cantidadFlechas = cantidadFlechas;
     }
+    //Metodo toString()
+    @Override
+    public String toString(){
+        return super.toString() + 
+                "{" +
+                " Distancia de ataque: " + distanciaAtaque +
+                " - Presición: " + presicion +
+                " - ¿Tiene flechas especiales?: " + flechasEspeciales +
+                " - Cantidad de flechas: " + cantidadFlechas +
+                "}";
+    }
 }

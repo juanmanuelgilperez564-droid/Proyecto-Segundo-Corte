@@ -34,4 +34,15 @@ public class Guerrero extends Personaje {
         this.peso = peso;
         this.tieneEscudo = tieneEscudo;
     }
+    //Método toString
+    @Override
+    public String toString(){
+        return super.toString() + 
+                "{" +
+                " Combate: " + combate +
+                " - fuerzaAtaque: " + fuerzaAtaque +
+                " - Peso: " + peso +
+                " - ¿Tiene escudo?: " + tieneEscudo +
+                "}";
+    }
 }

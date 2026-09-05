@@ -43,4 +43,15 @@ public class Mago extends Personaje{
         this.tieneBarita = tieneBarita;
         this.elemento = elemento;
     }
+    //Metodo toString
+    @Override
+    public String toString(){
+        return super.toString() + 
+                "{" +
+                " Puntos de maná: " + puntosMana +
+                " - Potencia de hechizo: " + potenciaHechizo +
+                " - ¿Tiene barita?: " + tieneBarita +
+                " - Elemento: " + elemento +
+                "}";
+    }
 }
