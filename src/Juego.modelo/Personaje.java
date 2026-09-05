@@ -35,4 +35,14 @@ public class Personaje {
     
     public boolean getesBueno(){return esBueno;}
     public void setEsBueno(boolean esBueno){this.esBueno = esBueno;}
+    
+    //Método toString
+    @Override
+    public String toString(){
+        return "Personaje: {" +
+                "Nombre: " + nombre +
+                " Nivel: " + nivel +
+                " Salud: " + salud +
+                " Bando: " + esBueno + "}";
+    }
 }
